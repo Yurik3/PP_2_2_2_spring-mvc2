@@ -9,7 +9,7 @@
 
 
 <th:block th:with="numb = ${ {1, 2, 3, 4, 5} }">
-    <p th:each="a : ${numb}" th:href="@{/cars(count=${c})}"/>
+    <p th:each="a : ${numb}" th:href="@{/cars(count=${a})}"/>
 </th:block>
 
 <th:block th:each="car : ${cars}">
